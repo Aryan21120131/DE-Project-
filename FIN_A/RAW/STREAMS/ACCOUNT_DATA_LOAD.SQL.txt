@@ -1,0 +1,1 @@
+create or replace stream FIN_A.RAW.ACCOUNT_DATA_LOAD on table ACCOUNT_DATA;

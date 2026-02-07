@@ -1,0 +1,11 @@
+create or replace TABLE FIN_A.TRA.DIM_BRANCH (
+	BRANCH_CODE VARCHAR(20) NOT NULL COMMENT 'Unique business identifier for branch',
+	BRANCH_NAME VARCHAR(150) NOT NULL COMMENT 'Official branch name',
+	CITY VARCHAR(100) NOT NULL COMMENT 'City where branch is located',
+	STATE VARCHAR(100) NOT NULL COMMENT 'State',
+	COUNTRY VARCHAR(100) NOT NULL COMMENT 'Country',
+	IFSC_CODE VARCHAR(15) NOT NULL COMMENT 'IFSC/routing code',
+	ACTN_CD VARCHAR(1) NOT NULL COMMENT 'ACTION_CDs(I/N/U/D/R)',
+	unique (IFSC_CODE),
+	primary key (BRANCH_CODE)
+);

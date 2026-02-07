@@ -1,0 +1,1 @@
+create or replace stream FIN_A.SCH.DAILY_DATA_LOAD on table FACT_DAILY_ACCOUNT_BALANCE;

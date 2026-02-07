@@ -1,0 +1,2 @@
+create or replace pipe FIN_A.SCH.ACCOUNT_DATA_PIPELINE auto_ingest=true aws_sns_topic='arn:aws:sns:us-east-1:381491929425:AccountDataLoad' as COPY INTO FIN_A.RAW.ACCOUNT_DATA
+FROM @FIN_A.SCH.ACCOUNT_STG;

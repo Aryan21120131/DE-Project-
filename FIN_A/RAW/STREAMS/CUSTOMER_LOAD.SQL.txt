@@ -1,0 +1,1 @@
+create or replace stream FIN_A.RAW.CUSTOMER_LOAD on table DIM_CUSTOMER;

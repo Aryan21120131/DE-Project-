@@ -1,0 +1,9 @@
+create or replace TABLE FIN_A.SCH.FACT_DAILY_ACCOUNT_BALANCE (
+	ACCOUNT_ID VARCHAR(100) NOT NULL COMMENT 'References DIM_ACCOUNT.account_id',
+	BALANCE_DATE DATE NOT NULL COMMENT 'Date of balance',
+	OPENING_BALANCE NUMBER(18,2) NOT NULL COMMENT 'Balance at start of day',
+	TOTAL_CREDIT NUMBER(18,2) NOT NULL COMMENT 'Total credited amount for the day',
+	TOTAL_DEBIT NUMBER(18,2) NOT NULL COMMENT 'Total debited amount for the day',
+	CLOSING_BALANCE NUMBER(18,2) NOT NULL COMMENT 'Balance at end of day',
+	primary key (ACCOUNT_ID, BALANCE_DATE)
+);
