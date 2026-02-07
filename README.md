@@ -1,10 +1,3 @@
-Here’s a **professional, project-ready README** you can use for your GitHub repo:
-`https://github.com/Aryan21120131/DE-Project-.git`
-
-Feel free to copy, edit team/project names, or tweak descriptions.
-
----
-
 # 🧠 FIN_A – Financial Data Engineering Project
 
 **Snowflake Data Warehouse Implementation • Full CDC Pipelines • RAW → TRA → SCH**
